@@ -32,13 +32,13 @@
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     </head>
     <body>
-        <div align="center">
+        <div>
             <h1>Winwheel.js example wheel - basic image wheel</h1>
             <p>Here is an example of a basic image drawn wheel, where the entire face of the wheel has been created out of a graphically rich image.</p>
             <br />
             <p>Choose a power setting then press the Spin button. You will be alerted to the prize won when the spinning stops.</p>
             <br />
-            <table cellpadding="0" cellspacing="0" border="0">
+            <table cellpadding="0" cellspacing="0">
                 <tr>
                     <td>
                         <div class="power_controls">
@@ -46,16 +46,16 @@
                             <br />
                             <table class="power" cellpadding="10" cellspacing="0">
                                 <tr>
-                                    <th align="center">Power</th>
+                                    <th >Power</th>
                                 </tr>
                                 <tr>
-                                    <td width="78" align="center" id="pw3" onClick="powerSelected(3);">High</td>
+                                    <td width="78"  id="pw3" onClick="powerSelected(3);">High</td>
                                 </tr>
                                 <tr>
-                                    <td align="center" id="pw2" onClick="powerSelected(2);">Med</td>
+                                    <td  id="pw2" onClick="powerSelected(2);">Med</td>
                                 </tr>
                                 <tr>
-                                    <td align="center" id="pw1" onClick="powerSelected(1);">Low</td>
+                                    <td  id="pw1" onClick="powerSelected(1);">Low</td>
                                 </tr>
                             </table>
                             <br />
@@ -64,9 +64,9 @@
                             &nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Play Again</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reset)
                         </div>
                     </td>
-                    <td width="318" height="418" class="the_wheel" align="center" valign="center">
+                    <td width="318" height="418" class="the_wheel"  valign="center">
                         <canvas id="canvas" width="315" height="418">
-                            <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+                            <p>Sorry, your browser doesn't support canvas. Please try another.</p>
                         </canvas>
                     </td>
                 </tr>
@@ -90,10 +90,10 @@
                 'textFillStyle'     : 'white',
                 'segments'     :                // Define segments.
                 [
-                   {'text' : 'T-55 Vampire'},
-                   {'text' : 'P-40 Kittyhawk'},
-                   {'text' : 'North American Harvard'},
-                   {'text' : 'L-39C Albatross'}
+                   {'text' : 'Huskies'},
+                   {'text' : 'Bears'},
+                   {'text' : 'Packers'},
+                   {'text' : 'Lions'}
                 ],
                 'animation' :                   // Specify the animation to use.
                 {
